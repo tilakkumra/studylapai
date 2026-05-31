@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # API Key baked right in - no terminal setup needed!
-client = genai.Client(api_key="AQ.Ab8RN6L77aZGUfEhW3a3sMCPr-NL_YnjtHnqxqSAeRicVzohzw")
+client = genai.Client()
 
 # In-memory database to store chat histories
 chats_db = {}
